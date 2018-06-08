@@ -1,4 +1,4 @@
-package tests.model;
+package tests.controller;
 
 import controller.Game;
 import jdk.nashorn.internal.ir.annotations.Ignore;

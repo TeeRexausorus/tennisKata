@@ -5,6 +5,7 @@ import model.Points;
 
 import static model.Points.Advantage;
 import static model.Points.Fourty;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by taddeigilles on 07/06/2018.
@@ -16,6 +17,12 @@ public class Game {
     public Game(String namePlayer1, String namePlayer2){
         player1 = new Player(namePlayer1);
         player2 = new Player(namePlayer2);
+    }
+
+    public boolean toss(){
+        int randomNum = ThreadLocalRandom.current().nextInt(0, 200);
+
+        return (randomNum % 2) == 0; //true = player2, false = player1
     }
 
     public Points getPlayer1Score() {

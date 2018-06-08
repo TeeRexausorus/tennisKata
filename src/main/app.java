@@ -11,5 +11,8 @@ import static model.Points.Love;
 public class app {
     public static void main(String[] args){
         Game g = new Game("Djokovic","Nadal");
+        while(g.has_winner().equals("keep playing (unless it's raining)")){
+
+        }
     }
 }
